@@ -315,13 +315,18 @@ section#intro-1 .i-guide p:hover {
 }
 
 section#intro-1 .images {
-  margin-top: 60px;
+  padding-top: 60px;
+  height: 0;
 }
 
 section#intro-1 .images #i-screen {
   width: 106.5%;
   position: relative;
-  z-index: 3;
+  z-index: 4;
+}
+
+section#intro-1 .images #i-screen:hover {
+  cursor: pointer;
 }
 
 section#intro-1 .images #i-bg {
@@ -331,19 +336,12 @@ section#intro-1 .images #i-bg {
   z-index: 2;
 }
 
-section#intro-1 .images i {
-  position: absolute;
-  transform: translate(-485%, -306%);
+section#intro-1 i#i-play {
+  position: relative;
+  top: 250px;
   font-size: 100px;
-  z-index: 2;
-}
-
-section#intro-1 .images:hover {
-  cursor: pointer;
-}
-
-section#intro-1 .images:hover i {
-  color: #858585;
+  color: white;
+  z-index: 3;
 }
 
 section#intro-2 {
@@ -354,11 +352,155 @@ section#intro-2 {
 }
 
 section#intro-2 .description {
-  padding: 10%;
+  padding: 8% 10%;
 }
 
 section#intro-2 .description h1 {
   font-weight: lighter;
   font-size: 35px;
+}
+
+section#intro-2 .description p {
+  padding: 15px 0;
+  font-size: 17px;
+}
+
+section#intro-2 .slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section#intro-2 .slide i {
+  padding: 2%;
+  font-size: 30px;
+  color: #ff3d00;
+}
+
+section#intro-2 .slide i:hover {
+  color: #b5b5b5;
+  cursor: pointer;
+}
+
+section#intro-2 .slide .slide-image {
+  width: 80%;
+}
+
+section#intro-2 .slide .slide-image img {
+  width: 100%;
+  height: auto;
+}
+
+section#intro-2 .slide .slide-image img:hover {
+  cursor: ew-resize;
+}
+
+section#intro-2 .slide .slide-image .slide-changes {
+  position: relative;
+  bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  cursor: ew-resize;
+}
+
+section#intro-2 .slide .slide-image .slide-changes p {
+  padding: 5px 10px;
+  width: 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: text;
+}
+
+.intro-background-1,
+.intro-background-2 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg);
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+section#intro-3 {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 8% 8% 2% 8%;
+}
+
+section#intro-3 h1,
+section#intro-3 h3 {
+  font-weight: lighter;
+}
+
+section#intro-3 h1 {
+  font-size: 35px;
+}
+
+section#intro-3 p {
+  padding: 15px 8%;
+  font-size: 18px;
+}
+
+section#intro-3 img {
+  width: 65%;
+  height: auto;
+  margin: 60px 0;
+}
+
+section#intro-3 .i3-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section#intro-3 .i3-row .i3-column-desc {
+  width: 35%;
+  text-align: left;
+}
+
+section#intro-3 .i3-row .i3-column-desc h3 {
+  font-size: 25px;
+}
+
+section#intro-3 .i3-row .i3-column-desc p {
+  padding: 15px 0;
+}
+
+section#intro-3 .i3-row .i3-column-spacer {
+  width: 5%;
+}
+
+section#intro-3 .i3-row .i3-column-img {
+  width: 60%;
+  height: auto;
+}
+
+section#intro-3 .i3-row .i3-column-img img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-background-2 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg);
+}
+
+section#intro-4 {
+  padding: 80px 15px 60px 15px;
+  text-align: center;
+}
+
+section#intro-4 .inspire-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section#intro-4 .inspire-list > div {
+  width: 232px;
+  height: 232px;
 }
 
