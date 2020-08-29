@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav#nav-user {
   width: 100%;
-  padding: 15px 5%;
+  padding: 10px 5%;
   background-color: #101010;
 }
 
@@ -25,12 +26,12 @@ nav#nav-user ul li {
 nav#nav-user ul li i {
   color: #009cff;
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 nav#nav-user ul li a {
   color: #989898;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 nav#nav-user ul li a:hover {
@@ -64,12 +65,217 @@ nav#nav-top ul {
 }
 
 nav#nav-top ul li {
-  padding: 20px;
+  padding: 2%;
+  font-size: 13px;
 }
 
 nav#nav-top ul li:hover {
-  background-color: white;
+  background-color: #E6E6E6;
   color: black;
   cursor: pointer;
+}
+
+section#product {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  height: 463px;
+  padding: 0px 5%;
+  color: white;
+}
+
+section#product .p-cit {
+  width: 28%;
+  height: 100%;
+  text-align: center;
+}
+
+section#product .p-cit p {
+  position: relative;
+  top: 92%;
+  font-size: 11px;
+}
+
+section#product .p-trial {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  margin-top: 45px;
+}
+
+section#product .p-trial h1 {
+  font-size: 28px;
+}
+
+section#product .p-trial h1,
+section#product .p-trial h3 {
+  font-weight: normal;
+}
+
+section#product .p-trial ul {
+  list-style: none;
+}
+
+section#product .p-trial ul li {
+  margin: 10px;
+}
+
+section#product .p-trial ul li i {
+  color: #989898;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+section#product .p-trial .download-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #666;
+  padding: 2% 4%;
+  width: 42%;
+}
+
+section#product .p-trial .download-btn:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+section#product .p-trial .download-btn div p {
+  font-size: 15px;
+}
+
+section#product .p-trial .download-btn .vertical-rule {
+  display: inline-block;
+  height: 95%;
+  border: 1px solid white;
+}
+
+section#product .p-trial .download-btn i {
+  font-size: 25px;
+}
+
+section#product .p-buy {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 95%;
+  margin-top: 23px;
+  padding: 10px 20px;
+}
+
+section#product .p-buy img {
+  float: right;
+  margin-top: 10px;
+  margin-right: -10px;
+}
+
+section#product .p-buy .discount {
+  background-color: #CC397F;
+  padding: 6px;
+  width: 25%;
+}
+
+section#product .p-buy #price-1 {
+  margin-top: 10px;
+  text-decoration: line-through;
+  color: #989898;
+  font-size: 17px;
+}
+
+section#product .p-buy #price-2 {
+  font-size: 25px;
+}
+
+section#product .p-buy #price-3 {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #989898;
+}
+
+section#product .p-buy .buy-btn {
+  width: 40%;
+  margin-top: 20px;
+  padding: 8px 5%;
+  background-color: #009cff;
+  text-align: center;
+  font-size: 15px;
+}
+
+section#product .p-buy .buy-btn:hover {
+  -webkit-filter: brightness(1.25);
+          filter: brightness(1.25);
+  cursor: pointer;
+}
+
+section#product .p-buy .current-sale {
+  margin-top: 45px;
+  padding: 4% 5%;
+  background-color: #E6E6E6;
+  color: black;
+  font-size: 13px;
+}
+
+section#product .p-buy .current-sale p {
+  margin: 7px 0;
+}
+
+section#product .p-buy .current-sale span {
+  color: #CC397F;
+  font-weight: 1000;
+}
+
+section#product .p-buy .current-sale a {
+  color: #009cff;
+}
+
+section#product .p-buy .current-sale a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav#nav-bottom {
+  padding: 0px 8%;
+  background-color: #E6E6E6;
+}
+
+nav#nav-bottom ul {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  list-style: none;
+  font-size: 18px;
+  color: #646464;
+}
+
+nav#nav-bottom ul li {
+  padding: 2% 3%;
+  text-align: center;
+}
+
+nav#nav-bottom ul li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+nav#nav-bottom ul .navb-selected {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-bottom: 3px solid #101010;
+}
+
+nav#nav-bottom ul .navb-selected:hover {
+  background-color: white;
+  cursor: default;
+}
+
+main {
+  width: 100%;
+  height: 400px;
+  background-color: #101010;
 }
 
