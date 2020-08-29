@@ -492,15 +492,94 @@ section#intro-4 {
   text-align: center;
 }
 
+section#intro-4 h1 {
+  font-size: 35px;
+  font-weight: lighter;
+  margin-bottom: 55px;
+}
+
 section#intro-4 .inspire-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 0 1.5%;
+  color: white;
 }
 
 section#intro-4 .inspire-list > div {
+  background-position: center;
+  background-size: cover;
   width: 232px;
   height: 232px;
+}
+
+section#intro-4 .inspire-list > div h3 {
+  position: relative;
+  top: 190px;
+}
+
+section#intro-4 .inspire-list .inspiration-1 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/mirror.jpg);
+}
+
+section#intro-4 .inspire-list .inspiration-2 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/navigator.jpg);
+}
+
+section#intro-4 .inspire-list .inspiration-3 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/kaleidoscope.jpg);
+}
+
+section#intro-4 .inspire-list .inspiration-4 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/woodcut.jpg);
+}
+
+section#intro-4 .inspire-list .inspiration-5 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/apply-lighting.jpg);
+}
+
+section#intro-5 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg);
+  height: 590px;
+}
+
+section#intro-5 .i5-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-top: 120px;
+}
+
+section#intro-5 .i5-row .i5-column {
+  width: 35%;
+  height: 330px;
+  padding: 2% 0;
+  background-color: white;
+  text-align: center;
+}
+
+section#intro-5 .i5-row .i5-column a {
+  color: #009cff;
+}
+
+section#intro-5 .i5-row .i5-column a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section#intro-5 .i5-row .i5-column h2 {
+  padding-top: 50px;
+  font-weight: lighter;
+}
+
+section#intro-5 .i5-row .i5-column p {
+  padding: 15px 6%;
+  font-size: 16px;
+}
+
+section#intro-5 .i5-row .i5-spacer {
+  width: 2%;
 }
 

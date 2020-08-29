@@ -222,19 +222,98 @@ section#intro-4{
   padding: 80px 15px 60px 15px;
   text-align: center;
 
+  h1{
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 55px;
+  }
+
   .inspire-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding: 0 1.5%;
+
+    color: $cl_primary;
 
     & > div{
+      background-position: center;
+      background-size: cover;
+
       width: 232px;
       height: 232px;
+
+      h3{
+        position: relative;
+        top: 190px;
+      }
     }
 
     .inspiration-1{
+      background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/mirror.jpg);
+    }
 
+    .inspiration-2{
+      background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/navigator.jpg);
+    }
+
+    .inspiration-3{
+      background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/kaleidoscope.jpg);
+    }
+
+    .inspiration-4{
+      background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/woodcut.jpg);
+    }
+
+    .inspiration-5{
+      background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/apply-lighting.jpg);
+    }
+  }
+}
+
+section#intro-5{
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg);
+  height: 590px;
+
+  .i5-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    padding-top: 120px;
+
+    .i5-column{
+      width: 35%;
+      height: 330px;
+
+      padding: 2% 0;
+      background-color: $cl_primary;
+
+      text-align: center;
+
+      a{
+        color: $cl_tertiary;
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      h2{
+        padding-top: 50px;
+        font-weight: lighter;
+      }
+      p{
+        padding: 15px 6%;
+        font-size: 16px;
+      }
+    }
+
+    .i5-spacer{
+      width: 2%;
     }
   }
 }
