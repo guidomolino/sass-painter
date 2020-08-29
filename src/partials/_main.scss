@@ -1,13 +1,14 @@
 
-section#intro{
+section#intro-1{
   background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg);
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: 50%;
+
+  padding: 0 15%;
+  height: 895px;
 
   color: $cl_primary;
-  padding: 0 15%;
-
   text-align: center;
 
   h1{
@@ -43,21 +44,50 @@ section#intro{
   }
 
   .images{
-    width: 100%;
-    height: auto;
+    margin-top: 60px;
 
     #i-screen{
-      width: 100% ;
+      width: 106.5%;
+      position: relative;
+      z-index: 3;
     }
 
     #i-bg{
-      width: 50%;
+      width: 99%;
       position: relative;
-      transform: translate(50%, 50%);
+      transform: translate(3%, -101%);
+      z-index: 2;
     }
 
     i{
       position: absolute;
+      transform: translate(-485%, -306%);
+      font-size: 100px;
+      z-index: 2;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:hover i{
+      color: rgb(133, 133, 133);
+    }
+  }
+
+}
+
+section#intro-2{
+  background-color: $cl_primary;
+  color: black;
+  padding: 0 5%;
+  text-align: center;
+
+  .description{
+    padding: 10%;
+
+    h1{
+      font-weight: lighter;
+      font-size: 35px;
     }
   }
 }
