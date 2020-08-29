@@ -1,0 +1,63 @@
+
+section#intro{
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: $cl_primary;
+  padding: 0 15%;
+
+  text-align: center;
+
+  h1{
+    padding-top: 100px;
+
+    font-size: 35px;
+    font-weight: lighter;
+  }
+
+  p{
+    padding: 20px 0;
+  }
+
+  .i-guide{
+
+    i{
+      padding: 8px;
+      border: 1px solid $cl_primary;
+      border-radius: 50%;
+      margin-right: 20px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    p{
+      display: inline-block;
+      padding: 0 !important;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .images{
+    width: 100%;
+    height: auto;
+
+    #i-screen{
+      width: 100% ;
+    }
+
+    #i-bg{
+      width: 50%;
+      position: relative;
+      transform: translate(50%, 50%);
+    }
+
+    i{
+      position: absolute;
+    }
+  }
+}

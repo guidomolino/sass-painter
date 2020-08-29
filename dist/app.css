@@ -273,9 +273,68 @@ nav#nav-bottom ul .navb-selected:hover {
   cursor: default;
 }
 
+section#intro {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  padding: 0 15%;
+  text-align: center;
+}
+
+section#intro h1 {
+  padding-top: 100px;
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+section#intro p {
+  padding: 20px 0;
+}
+
+section#intro .i-guide i {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+section#intro .i-guide i:hover {
+  cursor: pointer;
+}
+
+section#intro .i-guide p {
+  display: inline-block;
+  padding: 0 !important;
+}
+
+section#intro .i-guide p:hover {
+  cursor: pointer;
+}
+
+section#intro .images {
+  width: 100%;
+  height: auto;
+}
+
+section#intro .images #i-screen {
+  width: 100%;
+}
+
+section#intro .images #i-bg {
+  width: 50%;
+  position: relative;
+  transform: translate(50%, 50%);
+}
+
+section#intro .images i {
+  position: absolute;
+}
+
 main {
   width: 100%;
-  height: 400px;
+  height: 1400px;
   background-color: #101010;
 }
 
