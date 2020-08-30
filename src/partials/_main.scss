@@ -5,155 +5,165 @@ section#intro-1{
   background-size: cover;
   background-position: 50%;
 
-  padding: 0 15%;
-  height: 895px;
 
   color: $cl_primary;
-  text-align: center;
 
-  h1{
-    padding-top: 100px;
+  .container{
 
-    font-size: 35px;
-    font-weight: lighter;
-  }
+    text-align: center;
+    height: 895px;
 
-  p{
-    padding: 20px 0;
-  }
+    h1{
+      padding-top: 100px;
 
-  .i-guide{
-
-    i{
-      padding: 8px;
-      border: 1px solid $cl_primary;
-      border-radius: 50%;
-      margin-right: 20px;
-      &:hover{
-        cursor: pointer;
-      }
+      font-size: 35px;
+      font-weight: lighter;
     }
 
     p{
-      display: inline-block;
-      padding: 0 !important;
-      &:hover{
-        cursor: pointer;
+      padding: 20px 0;
+    }
+
+    .i-guide{
+
+      i{
+        padding: 8px;
+        border: 1px solid $cl_primary;
+        border-radius: 50%;
+        margin-right: 20px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      p{
+        display: inline-block;
+        padding: 0 !important;
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
+
+    .images{
+      margin-top: 60px;
+      width: 1000px;
+      height: 570px;
+      margin-left: 80px;
+
+
+      #i-screen{
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        height: auto;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      #i-bg{
+        position: relative;
+        transform: translate(0%, -100.8%);
+        z-index: 2;
+
+        width: 100%;
+        height: 560px;
+      }
+
+      #i-play{
+        position: absolute;
+        transform: translate(-562%, -327%);
+        font-size: 100px;
+        color: $cl_primary;
+        z-index: 3;
+
+      }
+
+      #i-screen:hover #i-play{
+        color: grey;
+      }
+
+    }
   }
 
-  .images{
-    margin-top: 60px;
-    width: 1000px;
-    height: 570px;
-
-    #i-screen{
-      position: relative;
-      z-index: 4;
-      width: 100%;
-      height: auto;
-
-    }
-
-    #i-bg{
-      position: relative;
-      transform: translate(0%, -100.8%);
-      z-index: 2;
-
-      width: 100%;
-      height: 560px;
-    }
-
-    #i-play{
-      position: absolute;
-      transform: translate(-562%, -327%);
-      font-size: 100px;
-      color: $cl_primary;
-      z-index: 3;
-
-    }
-
-    &:hover{
-      cursor: pointer;
-    }
-
-    &:hover #i-play{
-      color: grey;
-    }
-  }
 }
 
 section#intro-2{
   background-color: $cl_primary;
   color: black;
-  padding: 60px 5%;
-  text-align: center;
 
-  .description{
-    padding: 60px 10%;
+  .container{
+    padding: 60px 0;
+    text-align: center;
 
-    h1{
-      font-weight: lighter;
-      font-size: 35px;
-    }
+    .description{
+      padding: 60px 10%;
 
-    p{
-      padding: 15px 0;
-      font-size: 17px;
-    }
-  }
+      h1{
+        font-weight: lighter;
+        font-size: 35px;
+      }
 
-  .slide{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    margin-bottom: 40px;
-
-    i{
-      padding: 2%;
-      font-size: 30px;
-      color: rgb(255, 61, 0);
-
-      &:hover{
-        color: rgb(181, 181, 181);
-        cursor: pointer;
+      p{
+        padding: 15px 0;
+        font-size: 17px;
       }
     }
 
-    .slide-image{
-      width: 970px;
-      height: 600px;
+    .slide{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
-      img{
-        width: 100%;
-        height: auto;
+      width: 100%;
+      margin-bottom: 40px;
+
+      i{
+        padding: 2%;
+        font-size: 30px;
+        color: rgb(255, 61, 0);
 
         &:hover{
-          cursor: ew-resize;
+          color: rgb(181, 181, 181);
+          cursor: pointer;
         }
       }
 
-      .slide-changes{
-        position: relative;
-        bottom: 37px;
-        display: flex;
-        justify-content: space-between;
-        cursor: ew-resize;
+      .slide-image{
+        width: 970px;
+        height: 600px;
 
-        p{
-          padding: 5px 10px;
-          width: 7%;
-          background-color: rgba(0, 0, 0, 0.8);
-          color: $cl_primary;
-          cursor: text;
+        img{
+          width: 100%;
+          height: auto;
+
+          &:hover{
+            cursor: ew-resize;
+          }
+        }
+
+        .slide-changes{
+          position: relative;
+          bottom: 37px;
+          display: flex;
+          justify-content: space-between;
+          cursor: ew-resize;
+
+          p{
+            padding: 5px 10px;
+            width: 7%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: $cl_primary;
+            cursor: text;
+          }
         }
       }
     }
   }
+
 }
 
 .intro-background-1, .intro-background-2{
@@ -168,66 +178,70 @@ section#intro-2{
 section#intro-3{
   background-color: $bg_tertiary;
   color: $cl_primary;
-  text-align: center;
 
-  padding: 8% 8% 2% 8%;
 
-  h1,h3{
-    font-weight: lighter;
-  }
+  .container{
+    text-align: center;
+    padding: 8% 0 2% 0;
 
-  h1{
-    font-size: 35px;
-  }
-
-  p{
-    padding: 15px 8%;
-    font-size: 18px;
-  }
-
-  img{
-    width: 770px;
-    height: 450px;
-
-    margin: 60px 0;
-  }
-
-  .i3-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .i3-column-desc{
-      width: 40%;
-      text-align: left;
-
-      h3{
-        font-size: 25px;
-      }
-
-      p{
-        padding: 15px 0;
-      }
+    h1,h3{
+      font-weight: lighter;
     }
 
-    .i3-column-img{
-      width: 60%;
-      height: auto;
+    h1{
+      font-size: 35px;
+    }
 
-      img{
-        width: 670px;
-        height: 515px;
+    p{
+      padding: 15px 8%;
+      font-size: 18px;
+    }
+
+    img{
+      width: 770px;
+      height: 450px;
+
+      margin: 60px 0;
+    }
+
+    .i3-row{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .i3-column-desc{
+        width: 40%;
+        text-align: left;
+
+        h3{
+          font-size: 25px;
+        }
+
+        p{
+          padding: 15px 0;
+        }
+      }
+
+      .i3-column-img{
+        width: 60%;
+        height: auto;
+
+        img{
+          width: 670px;
+          height: 515px;
+        }
       }
     }
   }
-}
 
-.intro-background-2{
-  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg);
-}
+  .intro-background-2{
+    background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg);
+  }
+  }
+
 
 section#intro-4{
-  padding: 80px 15px 60px 15px;
+  padding: 80px 10% 60px 10%;
   text-align: center;
 
   h1{
@@ -241,7 +255,6 @@ section#intro-4{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 1.5%;
 
     color: $cl_primary;
 
@@ -249,8 +262,8 @@ section#intro-4{
       background-position: center;
       background-size: cover;
 
-      width: 232px;
-      height: 232px;
+      width: 262px;
+      height: 262px;
 
       h3{
         position: relative;
@@ -282,46 +295,52 @@ section#intro-4{
 
 section#intro-5{
   background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg);
-  height: 590px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .i5-row{
+  .container{
+    height: 590px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .i5-row{
 
-    width: 100%;
-    padding-top: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
 
-    .i5-column{
-      width: 35%;
-      height: 330px;
+      width: 100%;
+      padding-top: 60px;
 
-      padding: 2% 0;
-      background-color: $cl_primary;
+      .i5-column{
+        width: 38%;
+        height: 330px;
 
-      text-align: center;
+        padding: 2% 0;
+        background-color: $cl_primary;
 
-      a{
-        color: $cl_tertiary;
-        &:hover{
-          text-decoration: underline;
-          cursor: pointer;
+        text-align: center;
+
+        a{
+          color: $cl_tertiary;
+          &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+        h2{
+          padding-top: 50px;
+          font-weight: lighter;
+        }
+        p{
+          padding: 15px 6%;
+          font-size: 16px;
         }
       }
 
-      h2{
-        padding-top: 50px;
-        font-weight: lighter;
+      .i5-spacer{
+        width: 2%;
       }
-      p{
-        padding: 15px 6%;
-        font-size: 16px;
-      }
-    }
-
-    .i5-spacer{
-      width: 2%;
     }
   }
+
 }

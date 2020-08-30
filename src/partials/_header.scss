@@ -39,17 +39,21 @@ nav#nav-user{
 }
 
 nav#nav-top{
-  width: 100%;
-  padding: 0px 5%;
+
+  // padding: 0px 5%;
 
   background-color: $bg_primary;
 
-  display: flex;
-  align-items: center;
 
+
+  .container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 
   img{
-    width:100px;
+    width:90px;
     height: auto;
     cursor: pointer;
   }
@@ -85,214 +89,216 @@ section#product{
   background-position: 50%;
   background-repeat: no-repeat;
 
-  display: flex;
-
-  width: 100%;
-  height: 463px;
-  padding: 0px 5%;
-
   color: $cl_primary;
 
-  .p-cit{
-    width: 28%;
-    height: 100%;
-    text-align: center;
-
-    p{
-      position: relative;
-      top: 92%;
-
-      font-size: 11px;
-    }
-  }
-
-  .p-trial{
+  .container{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 50%;
+    height: 463px;
 
-    height: 80%;
-    margin-top: 45px;
+    .p-cit{
+      width: 28%;
+      height: 100%;
+      text-align: center;
 
-    h1{
-      font-size: 28px
+      p{
+        position: relative;
+        top: 92%;
+
+        font-size: 11px;
+      }
     }
 
-    h1,h3{
-      font-weight: normal;
-    }
+    .p-trial{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 50%;
 
-    ul{
-      list-style: none;
+      height: 80%;
+      margin-top: 45px;
 
-      li{
-        margin: 10px;
+      h1{
+        font-size: 28px
+      }
+
+      h1,h3{
+        font-weight: normal;
+      }
+
+      ul{
+        list-style: none;
+
+        li{
+          margin: 10px;
+
+          i{
+            color: $cl_secondary;
+            font-size: 18px;
+
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .download-btn{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #666;
+        padding: 2% 4%;
+        width: 42%;
+
+        &:hover{
+          cursor: pointer;
+          filter: brightness(80%);
+        }
+
+        div p{
+          font-size: 15px;
+        }
+
+        .vertical-rule{
+          display: inline-block;
+          height: 95%;
+          border: 1px solid white;
+
+        }
 
         i{
-          color: $cl_secondary;
-          font-size: 18px;
-
-          margin-right: 10px;
+          font-size: 25px;
         }
       }
     }
 
-    .download-btn{
+    .p-buy{
+      background-color: rgba(0, 0, 0, 0.90);
 
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      height: 95%;
 
-      background-color: #666;
-      padding: 2% 4%;
-      width: 42%;
+      margin-top: 23px;
+      padding: 10px 20px;
 
-      &:hover{
-        cursor: pointer;
-        filter: brightness(80%);
+      img{
+        float: right;
+        margin-top: 10px;
+        margin-right: -10px;
       }
 
-      div p{
-        font-size: 15px;
+      .discount{
+        background-color: #CC397F;
+        padding: 6px;
+        width: 25%;
       }
 
-      .vertical-rule{
-        display: inline-block;
-        height: 95%;
-        border: 1px solid white;
-
+      #price-1{
+        margin-top: 10px;
+        text-decoration: line-through;
+        color: $cl_secondary;
+        font-size: 17px;
       }
 
-      i{
+      #price-2{
         font-size: 25px;
       }
-    }
-  }
 
-  .p-buy{
-    background-color: rgba(0, 0, 0, 0.90);
-
-    height: 95%;
-
-    margin-top: 23px;
-    padding: 10px 20px;
-
-    img{
-      float: right;
-      margin-top: 10px;
-      margin-right: -10px;
-    }
-
-    .discount{
-      background-color: #CC397F;
-      padding: 6px;
-      width: 25%;
-    }
-
-    #price-1{
-      margin-top: 10px;
-      text-decoration: line-through;
-      color: $cl_secondary;
-      font-size: 17px;
-    }
-
-    #price-2{
-      font-size: 25px;
-    }
-
-    #price-3{
-      margin-top: 5px;
-      font-size: 14px;
-      color: $cl_secondary;
-    }
-
-    .buy-btn{
-      width: 40%;
-      margin-top: 20px;
-      padding: 8px 5%;
-      background-color: $cl_tertiary;
-
-      text-align: center;
-      font-size: 15px;
-
-      &:hover{
-        filter: brightness(1.25);
-        cursor: pointer;
-      }
-    }
-
-    .current-sale{
-
-      margin-top: 45px;
-      padding: 4% 5%;
-
-      background-color: $bg_secondary;
-      color: black;
-      font-size: 13px;
-
-      p{
-        margin: 7px 0;
+      #price-3{
+        margin-top: 5px;
+        font-size: 14px;
+        color: $cl_secondary;
       }
 
-      span{
-        color: #CC397F;
-        font-weight: 1000;
-      }
+      .buy-btn{
+        width: 40%;
+        margin-top: 20px;
+        padding: 8px 5%;
+        background-color: $cl_tertiary;
 
-      a{
-        color: $cl_tertiary;
+        text-align: center;
+        font-size: 15px;
 
         &:hover{
-          text-decoration: underline;
+          filter: brightness(1.25);
           cursor: pointer;
         }
       }
 
-    }
+      .current-sale{
+
+        margin-top: 45px;
+        padding: 4% 5%;
+
+        background-color: $bg_secondary;
+        color: black;
+        font-size: 13px;
+
+        p{
+          margin: 7px 0;
+        }
+
+        span{
+          color: #CC397F;
+          font-weight: 1000;
+        }
+
+        a{
+          color: $cl_tertiary;
+
+          &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+      }
+  }
+
 
   }
 }
 
 nav#nav-bottom{
 
-  // DEBUG:
-  padding: 0px 8%;
   background-color: $bg_secondary;
 
-  ul{
-    display: flex;
-    align-items: center;
+  .container{
 
-    width: 75%;
+    ul{
+      display: flex;
+      align-items: center;
 
-    list-style: none;
-    font-size: 18px;
-    color: rgb(100, 100, 100);
+      width: 75%;
 
-    li{
-      padding: 2% 3%;
-      text-align: center;
+      list-style: none;
+      font-size: 18px;
+      color: rgb(100, 100, 100);
 
-      &:hover{
-        background-color: rgba(255, 255, 255, 0.30);
-        cursor: pointer;
+      li{
+        padding: 2% 3%;
+        text-align: center;
+
+        &:hover{
+          background-color: rgba(255, 255, 255, 0.30);
+          cursor: pointer;
+        }
+
       }
-
-    }
-    .navb-selected{
-      background-color: white;
-      color: black;
-
-      font-weight: bold;
-      border-bottom: 3px solid $bg_primary;
-
-      &:hover{
+      .navb-selected{
         background-color: white;
-        cursor: default;
+        color: black;
+
+        font-weight: bold;
+        border-bottom: 3px solid $bg_primary;
+
+        &:hover{
+          background-color: white;
+          cursor: default;
+        }
       }
     }
   }
+
 
 }

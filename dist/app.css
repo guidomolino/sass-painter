@@ -1,8 +1,21 @@
+@media only all and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav#nav-user {
@@ -41,15 +54,17 @@ nav#nav-user ul li a:hover {
 }
 
 nav#nav-top {
-  width: 100%;
-  padding: 0px 5%;
   background-color: #101010;
+}
+
+nav#nav-top .container {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 nav#nav-top img {
-  width: 100px;
+  width: 90px;
   height: auto;
   cursor: pointer;
 }
@@ -79,26 +94,27 @@ section#product {
   background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
-  display: flex;
-  width: 100%;
-  height: 463px;
-  padding: 0px 5%;
   color: white;
 }
 
-section#product .p-cit {
+section#product .container {
+  display: flex;
+  height: 463px;
+}
+
+section#product .container .p-cit {
   width: 28%;
   height: 100%;
   text-align: center;
 }
 
-section#product .p-cit p {
+section#product .container .p-cit p {
   position: relative;
   top: 92%;
   font-size: 11px;
 }
 
-section#product .p-trial {
+section#product .container .p-trial {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -107,30 +123,30 @@ section#product .p-trial {
   margin-top: 45px;
 }
 
-section#product .p-trial h1 {
+section#product .container .p-trial h1 {
   font-size: 28px;
 }
 
-section#product .p-trial h1,
-section#product .p-trial h3 {
+section#product .container .p-trial h1,
+section#product .container .p-trial h3 {
   font-weight: normal;
 }
 
-section#product .p-trial ul {
+section#product .container .p-trial ul {
   list-style: none;
 }
 
-section#product .p-trial ul li {
+section#product .container .p-trial ul li {
   margin: 10px;
 }
 
-section#product .p-trial ul li i {
+section#product .container .p-trial ul li i {
   color: #989898;
   font-size: 18px;
   margin-right: 10px;
 }
 
-section#product .p-trial .download-btn {
+section#product .container .p-trial .download-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -140,63 +156,63 @@ section#product .p-trial .download-btn {
   width: 42%;
 }
 
-section#product .p-trial .download-btn:hover {
+section#product .container .p-trial .download-btn:hover {
   cursor: pointer;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
 }
 
-section#product .p-trial .download-btn div p {
+section#product .container .p-trial .download-btn div p {
   font-size: 15px;
 }
 
-section#product .p-trial .download-btn .vertical-rule {
+section#product .container .p-trial .download-btn .vertical-rule {
   display: inline-block;
   height: 95%;
   border: 1px solid white;
 }
 
-section#product .p-trial .download-btn i {
+section#product .container .p-trial .download-btn i {
   font-size: 25px;
 }
 
-section#product .p-buy {
+section#product .container .p-buy {
   background-color: rgba(0, 0, 0, 0.9);
   height: 95%;
   margin-top: 23px;
   padding: 10px 20px;
 }
 
-section#product .p-buy img {
+section#product .container .p-buy img {
   float: right;
   margin-top: 10px;
   margin-right: -10px;
 }
 
-section#product .p-buy .discount {
+section#product .container .p-buy .discount {
   background-color: #CC397F;
   padding: 6px;
   width: 25%;
 }
 
-section#product .p-buy #price-1 {
+section#product .container .p-buy #price-1 {
   margin-top: 10px;
   text-decoration: line-through;
   color: #989898;
   font-size: 17px;
 }
 
-section#product .p-buy #price-2 {
+section#product .container .p-buy #price-2 {
   font-size: 25px;
 }
 
-section#product .p-buy #price-3 {
+section#product .container .p-buy #price-3 {
   margin-top: 5px;
   font-size: 14px;
   color: #989898;
 }
 
-section#product .p-buy .buy-btn {
+section#product .container .p-buy .buy-btn {
   width: 40%;
   margin-top: 20px;
   padding: 8px 5%;
@@ -205,13 +221,13 @@ section#product .p-buy .buy-btn {
   font-size: 15px;
 }
 
-section#product .p-buy .buy-btn:hover {
+section#product .container .p-buy .buy-btn:hover {
   -webkit-filter: brightness(1.25);
           filter: brightness(1.25);
   cursor: pointer;
 }
 
-section#product .p-buy .current-sale {
+section#product .container .p-buy .current-sale {
   margin-top: 45px;
   padding: 4% 5%;
   background-color: #E6E6E6;
@@ -219,30 +235,29 @@ section#product .p-buy .current-sale {
   font-size: 13px;
 }
 
-section#product .p-buy .current-sale p {
+section#product .container .p-buy .current-sale p {
   margin: 7px 0;
 }
 
-section#product .p-buy .current-sale span {
+section#product .container .p-buy .current-sale span {
   color: #CC397F;
   font-weight: 1000;
 }
 
-section#product .p-buy .current-sale a {
+section#product .container .p-buy .current-sale a {
   color: #009cff;
 }
 
-section#product .p-buy .current-sale a:hover {
+section#product .container .p-buy .current-sale a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 nav#nav-bottom {
-  padding: 0px 8%;
   background-color: #E6E6E6;
 }
 
-nav#nav-bottom ul {
+nav#nav-bottom .container ul {
   display: flex;
   align-items: center;
   width: 75%;
@@ -251,24 +266,24 @@ nav#nav-bottom ul {
   color: #646464;
 }
 
-nav#nav-bottom ul li {
+nav#nav-bottom .container ul li {
   padding: 2% 3%;
   text-align: center;
 }
 
-nav#nav-bottom ul li:hover {
+nav#nav-bottom .container ul li:hover {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-nav#nav-bottom ul .navb-selected {
+nav#nav-bottom .container ul .navb-selected {
   background-color: white;
   color: black;
   font-weight: bold;
   border-bottom: 3px solid #101010;
 }
 
-nav#nav-bottom ul .navb-selected:hover {
+nav#nav-bottom .container ul .navb-selected:hover {
   background-color: white;
   cursor: default;
 }
@@ -278,56 +293,63 @@ section#intro-1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  padding: 0 15%;
-  height: 895px;
   color: white;
-  text-align: center;
 }
 
-section#intro-1 h1 {
+section#intro-1 .container {
+  text-align: center;
+  height: 895px;
+}
+
+section#intro-1 .container h1 {
   padding-top: 100px;
   font-size: 35px;
   font-weight: lighter;
 }
 
-section#intro-1 p {
+section#intro-1 .container p {
   padding: 20px 0;
 }
 
-section#intro-1 .i-guide i {
+section#intro-1 .container .i-guide i {
   padding: 8px;
   border: 1px solid white;
   border-radius: 50%;
   margin-right: 20px;
 }
 
-section#intro-1 .i-guide i:hover {
+section#intro-1 .container .i-guide i:hover {
   cursor: pointer;
 }
 
-section#intro-1 .i-guide p {
+section#intro-1 .container .i-guide p {
   display: inline-block;
   padding: 0 !important;
 }
 
-section#intro-1 .i-guide p:hover {
+section#intro-1 .container .i-guide p:hover {
   cursor: pointer;
 }
 
-section#intro-1 .images {
+section#intro-1 .container .images {
   margin-top: 60px;
   width: 1000px;
   height: 570px;
+  margin-left: 80px;
 }
 
-section#intro-1 .images #i-screen {
+section#intro-1 .container .images #i-screen {
   position: relative;
   z-index: 4;
   width: 100%;
   height: auto;
 }
 
-section#intro-1 .images #i-bg {
+section#intro-1 .container .images #i-screen:hover {
+  cursor: pointer;
+}
+
+section#intro-1 .container .images #i-bg {
   position: relative;
   transform: translate(0%, -100.8%);
   z-index: 2;
@@ -335,7 +357,7 @@ section#intro-1 .images #i-bg {
   height: 560px;
 }
 
-section#intro-1 .images #i-play {
+section#intro-1 .container .images #i-play {
   position: absolute;
   transform: translate(-562%, -327%);
   font-size: 100px;
@@ -343,36 +365,35 @@ section#intro-1 .images #i-play {
   z-index: 3;
 }
 
-section#intro-1 .images:hover {
-  cursor: pointer;
-}
-
-section#intro-1 .images:hover #i-play {
+section#intro-1 .container .images #i-screen:hover #i-play {
   color: grey;
 }
 
 section#intro-2 {
   background-color: white;
   color: black;
-  padding: 60px 5%;
+}
+
+section#intro-2 .container {
+  padding: 60px 0;
   text-align: center;
 }
 
-section#intro-2 .description {
+section#intro-2 .container .description {
   padding: 60px 10%;
 }
 
-section#intro-2 .description h1 {
+section#intro-2 .container .description h1 {
   font-weight: lighter;
   font-size: 35px;
 }
 
-section#intro-2 .description p {
+section#intro-2 .container .description p {
   padding: 15px 0;
   font-size: 17px;
 }
 
-section#intro-2 .slide {
+section#intro-2 .container .slide {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -381,32 +402,32 @@ section#intro-2 .slide {
   margin-bottom: 40px;
 }
 
-section#intro-2 .slide i {
+section#intro-2 .container .slide i {
   padding: 2%;
   font-size: 30px;
   color: #ff3d00;
 }
 
-section#intro-2 .slide i:hover {
+section#intro-2 .container .slide i:hover {
   color: #b5b5b5;
   cursor: pointer;
 }
 
-section#intro-2 .slide .slide-image {
+section#intro-2 .container .slide .slide-image {
   width: 970px;
   height: 600px;
 }
 
-section#intro-2 .slide .slide-image img {
+section#intro-2 .container .slide .slide-image img {
   width: 100%;
   height: auto;
 }
 
-section#intro-2 .slide .slide-image img:hover {
+section#intro-2 .container .slide .slide-image img:hover {
   cursor: ew-resize;
 }
 
-section#intro-2 .slide .slide-image .slide-changes {
+section#intro-2 .container .slide .slide-image .slide-changes {
   position: relative;
   bottom: 37px;
   display: flex;
@@ -414,7 +435,7 @@ section#intro-2 .slide .slide-image .slide-changes {
   cursor: ew-resize;
 }
 
-section#intro-2 .slide .slide-image .slide-changes p {
+section#intro-2 .container .slide .slide-image .slide-changes p {
   padding: 5px 10px;
   width: 7%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -435,65 +456,68 @@ section#intro-2 .slide .slide-image .slide-changes p {
 section#intro-3 {
   background-color: #222;
   color: white;
-  text-align: center;
-  padding: 8% 8% 2% 8%;
 }
 
-section#intro-3 h1,
-section#intro-3 h3 {
+section#intro-3 .container {
+  text-align: center;
+  padding: 8% 0 2% 0;
+}
+
+section#intro-3 .container h1,
+section#intro-3 .container h3 {
   font-weight: lighter;
 }
 
-section#intro-3 h1 {
+section#intro-3 .container h1 {
   font-size: 35px;
 }
 
-section#intro-3 p {
+section#intro-3 .container p {
   padding: 15px 8%;
   font-size: 18px;
 }
 
-section#intro-3 img {
+section#intro-3 .container img {
   width: 770px;
   height: 450px;
   margin: 60px 0;
 }
 
-section#intro-3 .i3-row {
+section#intro-3 .container .i3-row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-section#intro-3 .i3-row .i3-column-desc {
+section#intro-3 .container .i3-row .i3-column-desc {
   width: 40%;
   text-align: left;
 }
 
-section#intro-3 .i3-row .i3-column-desc h3 {
+section#intro-3 .container .i3-row .i3-column-desc h3 {
   font-size: 25px;
 }
 
-section#intro-3 .i3-row .i3-column-desc p {
+section#intro-3 .container .i3-row .i3-column-desc p {
   padding: 15px 0;
 }
 
-section#intro-3 .i3-row .i3-column-img {
+section#intro-3 .container .i3-row .i3-column-img {
   width: 60%;
   height: auto;
 }
 
-section#intro-3 .i3-row .i3-column-img img {
+section#intro-3 .container .i3-row .i3-column-img img {
   width: 670px;
   height: 515px;
 }
 
-.intro-background-2 {
+section#intro-3 .intro-background-2 {
   background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg);
 }
 
 section#intro-4 {
-  padding: 80px 15px 60px 15px;
+  padding: 80px 10% 60px 10%;
   text-align: center;
 }
 
@@ -508,15 +532,14 @@ section#intro-4 .inspire-list {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 0 1.5%;
   color: white;
 }
 
 section#intro-4 .inspire-list > div {
   background-position: center;
   background-size: cover;
-  width: 232px;
-  height: 232px;
+  width: 262px;
+  height: 262px;
 }
 
 section#intro-4 .inspire-list > div h3 {
@@ -546,117 +569,128 @@ section#intro-4 .inspire-list .inspiration-5 {
 
 section#intro-5 {
   background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#intro-5 .container {
   height: 590px;
 }
 
-section#intro-5 .i5-row {
+section#intro-5 .container .i5-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
-section#intro-5 .i5-row .i5-column {
-  width: 35%;
+section#intro-5 .container .i5-row .i5-column {
+  width: 38%;
   height: 330px;
   padding: 2% 0;
   background-color: white;
   text-align: center;
 }
 
-section#intro-5 .i5-row .i5-column a {
+section#intro-5 .container .i5-row .i5-column a {
   color: #009cff;
 }
 
-section#intro-5 .i5-row .i5-column a:hover {
+section#intro-5 .container .i5-row .i5-column a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-section#intro-5 .i5-row .i5-column h2 {
+section#intro-5 .container .i5-row .i5-column h2 {
   padding-top: 50px;
   font-weight: lighter;
 }
 
-section#intro-5 .i5-row .i5-column p {
+section#intro-5 .container .i5-row .i5-column p {
   padding: 15px 6%;
   font-size: 16px;
 }
 
-section#intro-5 .i5-row .i5-spacer {
+section#intro-5 .container .i5-row .i5-spacer {
   width: 2%;
 }
 
 section#f-info {
+  background-color: #E6E6E6;
+}
+
+section#f-info .container {
   height: 298px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
-section#f-info nav {
+section#f-info .container nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 5%;
-  width: 90%;
+  width: 100%;
 }
 
-section#f-info nav h4 {
+section#f-info .container nav > div {
+  width: 297.5px;
+}
+
+section#f-info .container nav h4 {
   padding-top: 20px;
   font-weight: lighter;
 }
 
-section#f-info nav ul {
+section#f-info .container nav ul {
   list-style: none;
   padding-top: 10px;
 }
 
-section#f-info nav ul li {
+section#f-info .container nav ul li {
   margin: 5px 0;
   font-size: 12px;
+  color: #333;
 }
 
-section#f-info nav ul a {
+section#f-info .container nav ul a {
   color: inherit;
   text-decoration: none;
 }
 
-section#f-info nav ul a:hover {
+section#f-info .container nav ul a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-section#f-info nav .about {
-  width: 28%;
-}
-
-section#f-info nav .about .socials {
+section#f-info .container nav .about .socials {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 72%;
+  width: 88%;
   height: auto;
   margin-top: 30px;
 }
 
-section#f-info nav .about .socials a {
+section#f-info .container nav .about .socials a {
   text-decoration: none;
 }
 
-section#f-info nav .about .socials a img {
+section#f-info .container nav .about .socials a img {
   width: 100%;
   height: auto;
 }
 
 section#f-copyright {
   background-color: #222;
-  height: 90px;
-  padding: 0 5%;
 }
 
-section#f-copyright .f-row {
+section#f-copyright .container {
+  height: 90px;
+}
+
+section#f-copyright .container .f-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -664,26 +698,26 @@ section#f-copyright .f-row {
   padding-top: 12px;
 }
 
-section#f-copyright .f-row .col-ads {
+section#f-copyright .container .f-row .col-ads {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 25%;
 }
 
-section#f-copyright .f-row .col-ads img {
+section#f-copyright .container .f-row .col-ads img {
   max-width: 100px;
 }
 
-section#f-copyright .f-row .col-ads img:hover {
+section#f-copyright .container .f-row .col-ads img:hover {
   cursor: pointer;
 }
 
-section#f-copyright .f-row .col-copyrights {
+section#f-copyright .container .f-row .col-copyrights {
   width: 45%;
 }
 
-section#f-copyright .f-row .col-copyrights ul {
+section#f-copyright .container .f-row .col-copyrights ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -691,12 +725,12 @@ section#f-copyright .f-row .col-copyrights ul {
   font-size: 12px;
 }
 
-section#f-copyright .f-row .col-copyrights ul a {
+section#f-copyright .container .f-row .col-copyrights ul a {
   color: #989898;
   text-decoration: none;
 }
 
-section#f-copyright .f-row .col-copyrights ul a:hover {
+section#f-copyright .container .f-row .col-copyrights ul a:hover {
   text-decoration: underline;
   color: white;
 }
