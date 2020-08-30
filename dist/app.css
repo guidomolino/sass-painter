@@ -315,44 +315,51 @@ section#intro-1 .i-guide p:hover {
 }
 
 section#intro-1 .images {
-  padding-top: 60px;
-  height: 0;
+  margin-top: 60px;
+  width: 1000px;
+  height: 570px;
 }
 
 section#intro-1 .images #i-screen {
-  width: 106.5%;
   position: relative;
   z-index: 4;
-}
-
-section#intro-1 .images #i-screen:hover {
-  cursor: pointer;
+  width: 100%;
+  height: auto;
 }
 
 section#intro-1 .images #i-bg {
-  width: 99%;
   position: relative;
-  transform: translate(3%, -101%);
+  transform: translate(0%, -100.8%);
   z-index: 2;
+  width: 100%;
+  height: 560px;
 }
 
-section#intro-1 i#i-play {
-  position: relative;
-  top: 250px;
+section#intro-1 .images #i-play {
+  position: absolute;
+  transform: translate(-562%, -327%);
   font-size: 100px;
   color: white;
   z-index: 3;
 }
 
+section#intro-1 .images:hover {
+  cursor: pointer;
+}
+
+section#intro-1 .images:hover #i-play {
+  color: grey;
+}
+
 section#intro-2 {
   background-color: white;
   color: black;
-  padding: 0 5%;
+  padding: 60px 5%;
   text-align: center;
 }
 
 section#intro-2 .description {
-  padding: 8% 10%;
+  padding: 60px 10%;
 }
 
 section#intro-2 .description h1 {
@@ -371,6 +378,7 @@ section#intro-2 .slide {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 section#intro-2 .slide i {
@@ -385,7 +393,8 @@ section#intro-2 .slide i:hover {
 }
 
 section#intro-2 .slide .slide-image {
-  width: 80%;
+  width: 970px;
+  height: 600px;
 }
 
 section#intro-2 .slide .slide-image img {
@@ -445,8 +454,8 @@ section#intro-3 p {
 }
 
 section#intro-3 img {
-  width: 65%;
-  height: auto;
+  width: 770px;
+  height: 450px;
   margin: 60px 0;
 }
 
@@ -457,7 +466,7 @@ section#intro-3 .i3-row {
 }
 
 section#intro-3 .i3-row .i3-column-desc {
-  width: 35%;
+  width: 40%;
   text-align: left;
 }
 
@@ -469,18 +478,14 @@ section#intro-3 .i3-row .i3-column-desc p {
   padding: 15px 0;
 }
 
-section#intro-3 .i3-row .i3-column-spacer {
-  width: 5%;
-}
-
 section#intro-3 .i3-row .i3-column-img {
   width: 60%;
   height: auto;
 }
 
 section#intro-3 .i3-row .i3-column-img img {
-  width: 100%;
-  height: auto;
+  width: 670px;
+  height: 515px;
 }
 
 .intro-background-2 {
